@@ -32,17 +32,18 @@ Shows details about kimmikirino user.
 
 - Use create-react-app;
 - Use any additional library;
+- Use Google
 
 ## Submission instructions
 
 1. Fork this repository on github;
 2. Create the project as described above;
-3. Push all of your changes and create a PR against this repository.
+3. Push all of your changes and create a PR against this repository;
 4. Edit this readme file with the instructions to run the project, and add any comments that you think is relevant.
 
 ## Bonus
 
-- Find repos by any user.
+- Find repos by any user;
 - When a repo is clicked show a new page with the last 10 commits related to that repo;
 - Create a search field to filter the commits by the term inserted into the field;
 - Show us your work through your commit history;
@@ -56,16 +57,21 @@ Shows details about kimmikirino user.
 - Code readability
 - Commit history - structure and quality in english
 - Component-based structure
-- Libraries used
+- Additional Libraries used
 - Reusable Components
 - ES6 features
+- HTML5
 
 ## Questions or Problems?
 
-You can write us a Github issue.
+You can write us any time (whatsapp, email, or you can even call us)
 
-## Feedback (Optional)
-Feedback is part of our culture, it would be very gratifying if you could contribute to our hiring process by responding to [this short questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSe02C1P-ZwCTBK5h5p5yckQs0DbsRGjwz7GaI-ICzks2EhxkA/viewform).
+## IMPORTANT
+
+- Please, Do NOT copy the code from any of your friends
+- Please, Do not ask for help to experienced friends or boy/girl friends
+- Code by yourself, we appreciate it
+- Submit your PR until September 5th (23:59)
 
 ## Happy Coding!
 
