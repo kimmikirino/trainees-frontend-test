@@ -24,7 +24,7 @@ Shows details about kimmikirino user.
 
 - Show user information (name, stars, photo, followers, or any field you think is important);
 - Show user repositories;
-- Create any UI/UX design, but responsive;
+- Create your own UI/UX design, but responsive;
 - Use some features of ES6+;
 - Use HTML5 tags;
 
