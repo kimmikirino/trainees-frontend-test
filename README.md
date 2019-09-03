@@ -43,7 +43,7 @@ Shows details about kimmikirino user.
 
 ## Bonus
 
-- Find repos by any user;
+- Find repos by any user, using an input text field;
 - When a repo is clicked show a new page with the last 10 commits related to that repo;
 - Create a search field to filter the commits by the term inserted into the field;
 - Show us your work through your commit history;
