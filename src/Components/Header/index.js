@@ -9,7 +9,6 @@ const Header = () => {
       <div className="logo-content">
         <img src={logo} alt="Logo github" />
       </div>
-      <span>Header test</span>
     </div>
   )
 }

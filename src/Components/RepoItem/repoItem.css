@@ -1,0 +1,12 @@
+.repo-item-container {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  margin: 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.repo-item-container p {
+  margin: 5px 5px;
+}

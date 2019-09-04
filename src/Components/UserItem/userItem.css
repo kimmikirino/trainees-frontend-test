@@ -1,7 +1,7 @@
 .user-item {
   /*user info on the right side of the picture*/
   display: flex; 
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .user-item img {
@@ -13,4 +13,16 @@
 
 .user-item p {
   margin: 5px 10px;
+}
+
+@media only screen and (max-width: 543px) {
+  .user-item img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .user-item p {
+    margin: 2px 8px;
+    font-size: 14px;
+  }
 }

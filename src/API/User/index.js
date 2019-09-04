@@ -1,5 +1,10 @@
 import API from '..';
+import axios from 'axios';
 
 const getUser = () => API.get('/users/kariinagomes');
 
-export { getUser };
+const getUserReposByURL = (url = '') => axios.get(url).then(
+  response => response.data
+)
+
+export { getUser, getUserReposByURL };
