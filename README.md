@@ -1,3 +1,24 @@
+# Instructions to run the project
+
+First, you have to fork this repository : https://github.com/kimmikirino/trainees-frontend-test into your github account, using git clone + URL.
+
+# Requirements
+
+- Node.JS (Stable Version), download: https://nodejs.org/en/download/ 
+- NPM (Installed with Node)
+
+#Installing
+*Make sure you already have installed 'create-react-app' on NPM, you can use by executing this code "npm install -g create-react-app"
+*Make sure you already have installed 'react-router-dom' on NPM, you can use by executing this code "npm install --save react-router-dom"
+*Make sure you already have installed 'axios' on NPM, you can use by executing this code "npm install --save axios"
+
+cd trainees-frontend-test
+npx create-react-app "Project name" (Take care of naming restrictions)
+
+*After the process, it depends if you are using npm or yarn, execute the command according to yours.
+
+npm run start / yarn start
+
 # Front end code challenge
 
 Hello :D
