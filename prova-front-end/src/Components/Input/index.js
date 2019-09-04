@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Input = ({ label, ...props}) => {
+const Input = ({ label,placeholder, ...props}) => {
 
   return (
     <section>
       <label>{label}: </label>
-      <input {...props} placeholder='Usuario'></input>
+      <input {...props} placeholder = {placeholder} ></input>
     </section>
   )
 }

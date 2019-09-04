@@ -1,0 +1,12 @@
+.header{
+    background-color:#24292e;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header > svg{
+    color:#fff;
+}
