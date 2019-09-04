@@ -1,7 +1,7 @@
 .user-item {
-  /*makes the user info on the right side of the picture*/
+  /*user info on the right side of the picture*/
   display: flex; 
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .user-item img {

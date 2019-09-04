@@ -3,7 +3,7 @@ import React from 'react';
 import './userItem.css';
 
 const UserItem = ({ user }) => {
-  return (
+  return user && (
     <div className="user-item">      
       <img src={user.avatar_url} alt="User avatar" />
       <div>
@@ -14,12 +14,7 @@ const UserItem = ({ user }) => {
         <p><b>Followers: </b> {user.followers}</p>
         <p><b>Following: </b> {user.following}</p>
         <p><b>Repos: </b> {user.public_repos}</p>
-        {/* <p><b>Bio: </b> {user.bio}</p> */}
       </div>
-      {/* 
-      user detail
-      repos 
-      */}
     </div>
   )
 } 
