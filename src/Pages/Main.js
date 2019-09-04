@@ -3,22 +3,23 @@ import "./main.css"
 import UserDetail from "../Components/UserDetail"
 import { getUserByName } from "../API/Data"
 
-const Main = () => {
-    const [user, setUser] = useState([]);
+
+let login = 'LucasMSnts' //test
+
+const Main = ({ match }) => {
+    
+    const [user, setUser] = useState([null]);
     useEffect(() => {
-        getUserByName().then(({ data }) => {
-            setUser(data)
-        }).catch((error) => {
-            console.log(error)
-        })
+        getUserByName(login).then(({ data }) => {
+        setUser(data)
+    })
     }, []);
 
     return (
         <>
             <div>
                 {
-                //console.log(user)
-                <UserDetail user={user} key={user.name} />
+                    <UserDetail user={user} key={user.id} />
                 }
             </div>
         </>

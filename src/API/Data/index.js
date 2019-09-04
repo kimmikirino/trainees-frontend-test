@@ -1,8 +1,6 @@
 import API from '..'
 
-const getUserByName = () => API.get(`users/LucasMSnts`)
-//const getUserByName = (user = '') => API.get(`users/${user}`)
-const getUserRepos = (user = '') => API.get(`users/${user}/repos`)
-
+const getUserByName = (login = '') => API.get(`users/${login}`)
+const getUserRepos = (login = '') => API.get(`users/${login}/repos`)
 
 export { getUserByName, getUserRepos }
