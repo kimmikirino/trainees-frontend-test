@@ -13,8 +13,10 @@ const Main = () => {
         <Header />
         <Hero />
       </header>
-      <section>
-        <UserItem user={user} />
+      <section className="body-container">
+        <div>
+          <UserItem user={user} />
+        </div>
       </section>
     </>
   )

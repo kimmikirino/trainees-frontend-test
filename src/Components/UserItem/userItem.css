@@ -1,0 +1,16 @@
+.user-item {
+  /*makes the user info on the right side of the picture*/
+  display: flex; 
+  justify-content: center;
+}
+
+.user-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  border: 3px double black;
+}
+
+.user-item p {
+  margin: 5px 10px;
+}
