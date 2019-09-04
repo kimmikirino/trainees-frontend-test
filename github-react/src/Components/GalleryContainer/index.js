@@ -25,7 +25,7 @@ const GalleryContainer = () => {
     <div className="gallery-container">
       <UserItem user={user} key={user.id} />
       <LabelInput type="text" label="Login do Usuário" onChange={handleChange}/>
-      <Button className="btn" onClick={handleClick}>Procurar</Button>
+      <Button type="submit" className="btn" onClick={handleClick}>Procurar</Button>
     </div>
   );
 };

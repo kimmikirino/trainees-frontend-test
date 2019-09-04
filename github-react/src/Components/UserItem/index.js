@@ -1,16 +1,13 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './userItem.css'
 
 const UserItem = ({ user }) => {
   return (
-    // <Link to={`/user/${user.id}`}>
       <div className="box-user">
-        <img src={user.avatar_url}/>
+        <Link to={`usuario/${user.id}`} user={user}><img src={user.avatar_url} alt={user.name}/></Link>
         <h3>Nome: {user.name}</h3>
-        <p>Local: {user.location}</p>
       </div>
-    // </Link>
   );
 };
 
