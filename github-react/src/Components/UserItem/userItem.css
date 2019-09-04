@@ -1,0 +1,8 @@
+.box-user {
+  padding-top: 50px;
+}
+.box-user img {
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid gray;
+}
