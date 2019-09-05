@@ -17,16 +17,20 @@ const RepoView = ({ match: { params }}) => {
     getUserRepoCommits(params.username, params.nameRepo).then(({ data }) => {
       data.length > length ?  (
         filterLastCommits(data)
-      ) : setRepo(data)
-
-      setRepoFiltered(data);
+      ) : insertReposValue(data);
     })
   }, [params]);
+
+  const insertReposValue = (data) => {
+    setRepo(data);
+    setRepoFiltered(data);
+  }
 
   // filter the last ten commits
   const filterLastCommits = (data) => {
     const lastCommits = data.filter((item, index) => (index < length));
     setRepo(lastCommits);
+    setRepoFiltered(lastCommits);
   }
 
   // update commit value
