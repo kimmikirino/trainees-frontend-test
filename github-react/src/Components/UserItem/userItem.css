@@ -1,8 +1,18 @@
 .box-user {
   padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .box-user img {
   width: 300px;
   border-radius: 50%;
-  border: 5px solid gray;
+  border: 5px solid #4a148c;
+}
+.box-user img:hover {
+border: 5px solid #e91e63;
+}
+.user-item-data{
+  font-size: 19px;
+  width: 300px;
 }

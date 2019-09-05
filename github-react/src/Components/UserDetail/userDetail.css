@@ -3,13 +3,16 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 130px;
+  padding-top: 120px;
 }
 .detail-container p {
   margin: 0px;
 }
 .user-img {
-  width: 300px;
+  width: 200px;
   border-radius: 50%;
-  border: 5px solid gray;
+  border: 5px solid #4a148c;
+}
+.user-img:hover {
+  border: 5px solid #ec407a;
 }

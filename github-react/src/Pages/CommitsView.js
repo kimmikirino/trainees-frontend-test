@@ -32,7 +32,7 @@ const CommitsView = ({ match, history } ) => {
     
     let searchResult = commitsClone.filter(commit => {
       if(commit.commit.message.toUpperCase().includes(value.toUpperCase())) return commit 
-      else return "";  //includes verifica se o valor existe na string
+      else return "";
     }) 
     setSearch(searchResult);
   };

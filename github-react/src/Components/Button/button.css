@@ -1,0 +1,33 @@
+.box-button {
+  height: 70px;;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  width: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+button {
+  width: auto;
+  height: 40px;
+  background-color: transparent;
+  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer; /*mickey*/
+  border: none;
+  padding: 0px 25px;
+}
+button:hover {
+  background-color: #ec407a;
+  color: #e1bee7;
+}
+button:focus {
+  outline: none;
+}

@@ -35,8 +35,10 @@ const UserBody = () => {
   return (
     <div className="user-body-container">
       <UserItem user={user} key={user.id} />
-      <LabelInput type="text" label="Login do Usuário" name="login" value={field.login} onChange={handleChange}/>
-      <Button type="submit" className="btn" onClick={handleClick}>Procurar</Button>
+      <div className="login-user-box">
+        <LabelInput type="text" label="Insira o login do usuário" name="login" value={field.login} onChange={handleChange}/>
+        <Button type="submit" className="btn-body" onClick={handleClick}>Procurar</Button>
+      </div>
     </div>
   );
 };

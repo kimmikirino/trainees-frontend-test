@@ -1,10 +1,23 @@
 .fixed-menu-box {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 70px;
   position: fixed;
   z-index: 1;
-  background-color: rgba(0 , 0, 0, 0.7);
-  justify-content: space-between;
+  background-color: rgba(70 , 20, 140, 0.9);
   align-items: center;
+}
+.menu-title {
+  height: 70px;
+  font-size: 30px;
+  color: whitesmoke;
+  text-align: center;
+  margin: 0px;
+  padding-top: 20px;
+}
+.box-fixed-menu-btn {
+  height: 100%;
+  width: auto;
+  display: flex;
 }
