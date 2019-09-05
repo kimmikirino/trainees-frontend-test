@@ -5,8 +5,8 @@ import './header.css'
 const Header = ({ className }) => {
 
   return(
-    <div >
-      <div >
+    <div className="fixed-menu">
+      <div>
         <h3>Api GitHub</h3>
       </div>
     </div>

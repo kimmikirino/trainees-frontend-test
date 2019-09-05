@@ -3,20 +3,24 @@ import "./main.css"
 import UserDet from "../Components/UserDetail"
 import { getUserByName } from "../API/Data"
 import Header from "../Components/Header"
+import Hero from "../Components/Header/Hero"
 
 
-const UserDetail = ( login ) => {
+const UserDetail = ( {match} ) => {
 
     const [user, setUser] = useState();
     useEffect(() => {
-        getUserByName(login.match.params.login).then(({ data}) => {
+        getUserByName(match.params.login).then(({ data}) => { 
         setUser(data)
     })
-    }, [login.match.params.login]);
+    }, [match.params.login]);
 
     return (
         <>      
-            <Header />
+            <header>
+                <Header />                
+                <Hero />
+            </header>
             <div> 
                 { <UserDet user={user} /> }
             </div>

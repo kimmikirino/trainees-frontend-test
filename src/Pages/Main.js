@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import LabelInput from '../Components/LabelInput'
 import UserDetail from '../Components/UserDetail';
 import Header from "../Components/Header"
+import Hero from "../Components/Header/Hero"
 
 //let login = 'LucasMSnts' //test
 
@@ -14,16 +15,21 @@ const handleChange = event => setUsername(event.target.value);
 
     return (
         <>  
-            <Header />
-            <div className="menu-content">     
-                <LabelInput label="Insira o login que deseja" 
-                    type="text" 
-                    placeholder="User"          
-                    onChange={handleChange}
-                    className="input-text"
-                />
-                <div className="menu-content">
-                    <Link to={`/${username}`}> <button onClick={() => <UserDetail user={username} />}>Buscar</button></Link>
+            <header>
+                <Header />
+                <Hero />
+            </header>
+            <div >
+                <div className="menu-content">     
+                    <LabelInput label="Insira o login que deseja" 
+                        type="text" 
+                        placeholder="User"          
+                        onChange={handleChange}
+                        className="input-text"
+                    />
+                    <div className="menu-content">
+                        <Link to={`/${username}`}> <button onClick={() => <UserDetail user={username} />}>Buscar</button></Link>
+                    </div>
                 </div>
             </div> 
         </>
