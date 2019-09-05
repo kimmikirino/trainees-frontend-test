@@ -10,7 +10,8 @@ function App() {
   return (
       <Router>
           <Switch>
-              <Route path="/" exact component={MainHook} />
+              <Route path="/"  component={MainHook} />
+              <Route path="/users/:userLogin"  component={MainHook} />
           </Switch>
       </Router>
 

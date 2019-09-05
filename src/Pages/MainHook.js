@@ -6,28 +6,42 @@ import Header from "../Components/Header"
 
 import "./mainhook.css"
 
-const MainHook = () => {
+const MainHook = ({ match }) => {
     const [UserInfo, setUserInfo] = useState(null);
     const [UserRepos, setUserRepos] = useState([]);
+    const [Username, setUsername] = useState(
+        match.params.userLogin ? match.params.userLogin : "andretanaka"
+    );
+    const [login, setLogin] = useState("");
+
+    //console.log(match.params.userLogin)
 
     useEffect(() => {
-        axios.get("https://api.github.com/users/kimmikirino")
+        axios.get("https://api.github.com/users/" + Username)
             .then(response => {
                 setUserInfo(response.data);
-                console.log((UserInfo));
+                //console.log((UserInfo));
             })
-        axios.get("https://api.github.com/users/kimmikirino/repos")
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            });
+        axios.get("https://api.github.com/users/" + Username + "/repos")
             .then(response => {
                 setUserRepos(response.data);
                 //console.log((response.data));
-            })
-    }, []);
+            });
+    }, [Username]);
+
+     const handleChange = e => setLogin(e.target.value);
+     //const handleClick = () => setUsername(login);
+    const handleClick = () => (window.location.href = "/users/" + login);
 
     return (
         UserInfo ? (
             <>
                 <header>
-                    <Header user={UserInfo} />
+                    <Header user={UserInfo} onChange={handleChange} onClick={handleClick} />
                 </header>
                 <div className="body-main">
                     <UserView user={UserInfo} />

@@ -12,7 +12,6 @@ const UserView = ({ user }) => {
                 </div>
                 <div className="user-details">
                     <h3>Informacoes do usuario</h3>
-                    <Field label="Nome:" info={user.name} />
                     <Field label="Usuario:" info={user.login} />
                     <Field label="Empresa:" info={user.company} />
                     <Field label="Localizacao:" info={user.location} />
