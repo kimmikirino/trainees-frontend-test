@@ -7,9 +7,9 @@ import UserRepos from '../../Pages/UserRepos';
 const UserDetail = ({ user }) => {
 
     return user ? (
-        <div className="gallery-container">
+        <div className="container">
             <img className='user-img' src={user.avatar_url} alt={user.name}></img>
-            <div>                 
+            <div className="item">                 
                 <h3>{user.name}</h3>                             
                 <p><b>Compania: </b>{user.company}</p>
                 <p><b>Localização: </b>{user.location}</p>

@@ -19,11 +19,11 @@ const handleChange = event => setUsername(event.target.value);
                 <Header />
                 <Hero />
             </header>
-            <div >
+            <div className="item">
                 <div className="menu-content">     
                     <LabelInput label="Insira o login que deseja" 
                         type="text" 
-                        placeholder="User"          
+                        placeholder="Usuario"          
                         onChange={handleChange}
                         className="input-text"
                     />

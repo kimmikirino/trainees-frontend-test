@@ -19,10 +19,10 @@ const UserRepos = ( {match} ) => {
     return (
         <>
             <header>
-                <Header />
+                <Header login={match.params.login}/>
                 <Hero />
             </header>
-            <div>
+            <div className="container">
                 { repos.map(repo => <UserRep userR={repo} key={repo.id} />) }
             </div>
         </>
