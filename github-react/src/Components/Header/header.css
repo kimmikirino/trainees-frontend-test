@@ -10,18 +10,35 @@
   align-items: center;
 }
 .menu-title {
+  display: flex;
+  align-items: center;
   height: 70px;
   font-size: 30px;
   color: whitesmoke;
   text-align: center;
   margin: 0px;
-  padding-top: 20px;
-  padding-left: 20px;
+  margin-left: 70px;
 }
 .box-fixed-menu-btn {
   height: 100%;
   width: auto;
   display: flex;
+}
+.github-icon {
+  max-width:50px;
+  max-height:50px;
+  width: auto;
+  height: auto;
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.logo-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: auto;
 }
 @media only screen and (max-width: 815px) {
   .fixed-menu-box {
