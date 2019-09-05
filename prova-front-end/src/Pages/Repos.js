@@ -2,8 +2,8 @@ import React, {useState,useEffect} from 'react'
 import {getMyProfile,getMyRepo} from '../API/GitHub/index'
 import RepoList from '../Components/RepoList/index'
 import Header from '../Components/Header'
-import Hero from '../Components/Header/hero'
 import {Link} from 'react-router-dom'
+import Footer from '../Components/Footer'
 import '../App.css'
 
 const Repos = () => {
@@ -50,7 +50,7 @@ const Repos = () => {
                 }
             </section>
         </section>
-        <section className = 'footerRelative'/>
+        <Footer/>
         </>
     )
 }

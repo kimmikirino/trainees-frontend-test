@@ -7,7 +7,7 @@
     justify-content: space-around;
     align-items: center;
     background-color:rgb(131, 121, 131);
-    height:750px;
+    flex-wrap:15px;
 }
 
 .showRepo section.Repo{
@@ -22,16 +22,101 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+.showRepo section.Repo section h1{
+    color:rgb(153, 42, 42);
+}
+
 .showRepo section.Repo .repTitle{
     font-family: 'Courier New', Courier, monospace;
     font-size:30px;
     text-align: center;
+    color: rgb(153, 42, 42);
 }
 
-.footerRelative{
-    height:123px;
-    width:100%;
-    bottom:0px;
+.commitFilter{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.commitFilter > button{
+    border-radius:10px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border: 2px;
+    height: 34px;
+    margin-top: 5px;
+    margin-left:5px; 
+}
+
+.resultFilter{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    border: 3px solid black;
+}
+
+#titleResult{
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(109, 47, 109);
+    font-size:25px;
+}
+
+#noResult{
+    margin-left:10px;
+    font-size:15px;
+}
+
+#titleCommit{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:rgb(109, 47, 109);
+    font-size:40px;
+}
+
+.listCommit{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction:column;
+}
+
+.listCommit section{
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction:column; 
+    margin-left:20px;
+    border:4px outset white;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+.contentCommit{
+    background-color:rgb(153, 149, 149);
     position:relative;
-    background-color:black;
+}
+
+.repoLinkUser{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:30px;
+}
+
+.repoLinkUser button{
+    font-size: 15px;
+    margin-bottom:30px;
+    border-radius:3px;
+    border: 2px;
+    height: 30px;
+}
+
+.repoLinkUser button:hover{
+    background-color:rgb(131, 118, 173);
+    color:white;
 }

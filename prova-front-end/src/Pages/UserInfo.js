@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import ProfileInfo from '../Components/ProfileInfo'
 import Header from '../Components/Header'
 import Hero from '../Components/Header/hero'
+import Footer from '../Components/Footer'
 
 const UserInfo = ({match,history}) => {
     const [profile,setProfile] = useState([])
@@ -22,12 +23,17 @@ const UserInfo = ({match,history}) => {
 
     return(
         <>
-        <header>
-            <Header/>
-            <Hero/>
-        </header>
-        <ProfileInfo profile = {profile} />  
-        <Link to ={`/${match.params.login}/repos`} profile = {profile}><button >Number of Repos:{profile.public_repos}</button></Link>
+            <header>
+                <Header/>
+                <Hero/>
+            </header>
+            <section className = 'content'>
+                <ProfileInfo profile = {profile} />
+                <section className = 'repoLinkUser'>
+                    <Link to ={`/${match.params.login}/repos`} profile = {profile}><button >Acess repositories</button></Link>
+                </section>
+                <Footer/>  
+            </section>
         </>
     )
 }

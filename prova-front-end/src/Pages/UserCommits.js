@@ -1,10 +1,10 @@
 import React, {useState,useEffect} from 'react'
 import Header from '../Components/Header'
-import Hero from '../Components/Header/hero'
 import {getUserCommitsByID} from '../API/GitHub/index'
 import CommitList from '../Components/CommitList'
 import Input from '../Components/Input'
 import ResultFilter from '../Components/ResultFilter'
+import Footer from '../Components/Footer'
 
 const Commits = ({match}) => {
     const [commits,setCommits] = useState([])
@@ -20,7 +20,7 @@ const Commits = ({match}) => {
         .catch((error) =>{
             console.log(error)
         })
-    },[])
+    },[match.params.login,match.params.id])
 
 
     const handleFiltro = (event) => setFiltro(event.target.value)
@@ -37,21 +37,36 @@ const Commits = ({match}) => {
         <>
         <header>
             <Header/>
-            <Hero/>
         </header>
-        <section>
-            <Input label='Commit Filter' placeholder='KeyWord' value={filtro} onChange= {handleFiltro}/>
-            <button onClick ={()=>{handleSearch(commits,filtro)}}>Search</button>
-            {result.length !== 0 ? <ResultFilter result = {result}/>:<h6>Type your search correctly</h6>}
-        {
-            commits.map((commit,i) => 
-            i < 10 ? 
-            <section key={commit.node_id}>
-                <CommitList commits = {commit} />
-            </section> : ''
-            )
-        }
+        <section className = 'contentCommit'>
+            <section className='commitFilter'>
+                <Input label='Commit Filter' placeholder='KeyWord' value={filtro} onChange= {handleFiltro}/>
+                <button onClick ={()=>{handleSearch(commits,filtro)}}>Search</button>
+            </section>
+                    {result.length !== 0 ?( 
+                    <section> 
+                        <h1 id='titleResult'>Resultados encontrados: {result.length}</h1>
+                        <section className='resultFilter'>
+                            <ResultFilter result = {result}/>
+                        </section>
+                    </section>)
+                        :
+                        <section>
+                            <h6 id= 'noResult'>Type your search correctly</h6>
+                        </section>
+                    }
+            <h1 id = 'titleCommit'>Commits</h1>
+            <section className = 'listCommit'>
+            {
+                commits.map((commit,i) => 
+                i < 10 ? 
+                    <CommitList commits = {commit} key={commit.node_id}/>
+                 : ''
+                )
+            }
+            </section>
         </section>
+        <Footer/>
         </>
     )
 }
