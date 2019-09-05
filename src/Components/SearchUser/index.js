@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
+import InputField from '../../Components/InputField';
 import { getUserByUsername } from '../../API/User';
-import searchIcon from '../../assets/imgs/search-icon.png';
-
-import '../UserItem/userItem.css';
 
 const SearchUser = (user) => {  
   const [inputUsernameValue, setUsernameValue] = useState(null);
@@ -14,7 +12,7 @@ const SearchUser = (user) => {
   }
 
   // call API passing username to search infos user
-  const searchUser = () => {
+  const searchValue = () => {
     getUserByUsername(inputUsernameValue).then(({ data }) => {
       user.setUser(data);
     }).catch((error)=> {
@@ -23,12 +21,7 @@ const SearchUser = (user) => {
   }
 
   return (
-    <div className="search-user">
-      <input type="text" onChange={updateInputValue} placeholder="username"></input>    
-      <button onClick={searchUser}>
-        <img src={searchIcon} alt="search icon" />
-      </button>    
-    </div>
+    <InputField type="text" onChange={updateInputValue} placeholder="username" onClick={searchValue} />
   )
 }
 
