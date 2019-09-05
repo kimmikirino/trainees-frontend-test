@@ -1,5 +1,8 @@
 ## Instructions to run the project:
 
+#### Result:
+ http://trainees-frontend-github.surge.sh/
+
 #### Requirements:
   * nodejs
   * npm
@@ -12,11 +15,11 @@
   ```
   * Install dependencies:
   ```
-      npm install or yarn install
+      npm install
   ```
   * Run the project:
   ```
-      npm start or yarn start
+      npm start
   ```
 
 --------------------------------
