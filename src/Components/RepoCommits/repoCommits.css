@@ -7,4 +7,15 @@
 .repo-commits-item p {
   font-size: 16px;
   margin: 8px 20px;
+  color: rgb(42, 0, 109);
+}
+
+.repo-commits-item p b {
+  color: rgb(0, 31, 167);
+}
+
+@media only screen and (max-width: 543px) {
+  .repo-commits-item p {
+    font-size: 15px;
+  }
 }
