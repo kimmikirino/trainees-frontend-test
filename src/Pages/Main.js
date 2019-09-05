@@ -1,26 +1,27 @@
-import React, { useState, useEffect } from 'react'
+import React, {useState} from 'react'
 import "./main.css"
-import UserDetail from "../Components/UserDetail"
-import { getUserByName } from "../API/Data"
+import { Link } from "react-router-dom";
+import LabelInput from '../Components/LabelInput'
+import UserDetail from '../Components/UserDetail';
+import Header from "../Components/Header"
 
+//let login = 'LucasMSnts' //test
 
-let login = 'LucasMSnts' //test
+const Main = () => {
 
-const Main = ({ match }) => {
-    
-    const [user, setUser] = useState([null]);
-    useEffect(() => {
-        getUserByName(login).then(({ data }) => {
-        setUser(data)
-    })
-    }, []);
+const [username, setUsername] = useState()
+const handleChange = event => setUsername(event.target.value);
 
     return (
-        <>
-            <div>
-                {
-                    <UserDetail user={user} key={user.id} />
-                }
+        <>        
+           <LabelInput label="Insira o login que deseja" 
+                type="text" 
+                placeholder="User"          
+                onChange={handleChange}
+                className=""
+            />
+            <div className="menu-content">
+                <Link to={`/${username}`}> <button onClick={() => <UserDetail user={username} />}>Buscar</button></Link>
             </div>
         </>
     );

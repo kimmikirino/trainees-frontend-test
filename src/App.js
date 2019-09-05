@@ -3,6 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Main from "./Pages/Main";
 import UserRepos from "./Pages/UserRepos"
+import UserDetail from "./Pages/UserDetail"
 
 
 
@@ -11,6 +12,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={Main} />
+        <Route path="/:login/" component={UserDetail} />
         <Route path="/:login/repos" component={UserRepos} />
       </Switch>
     </Router>

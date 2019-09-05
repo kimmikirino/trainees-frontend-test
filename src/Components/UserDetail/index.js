@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import './userDetail.css';
+import UserRepos from '../UserRepos';
 //import isNull from '../isNull';
 
 const UserDetail = ({ user }) => {
@@ -21,7 +22,10 @@ const UserDetail = ({ user }) => {
                 <p><b>Email: </b>{(user.email === null ? 'Não informado' : user.email)}</p>
                 <div>
                     <Link to={`/${user.login}/repos`}>
-                        <button>Ver Repositorios</button>
+                        <button onClick={() => <UserRepos userR={user} key={user.id}/>} 
+                        >
+                            Ver Repositorios
+                        </button>
                     </Link>
                 </div>
             </div>
