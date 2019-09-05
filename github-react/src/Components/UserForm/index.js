@@ -3,7 +3,7 @@ import './userForm.css';
 import LabelInput from '../LabelInput/index.js';
 import Button from '../Button/index.js';
 
-const UserForm = ({...props}) => {
+const UserForm = () => {
   
   const [login, setLogin] = useState('');
 

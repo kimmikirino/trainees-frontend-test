@@ -7,7 +7,7 @@ const UserItem = ({ user }) => {
       <div className="box-user">
         <Link to={`${user.login}/${user.id}`} user={user}><img src={user.avatar_url} alt={user.name}/></Link>
         <div className="user-item-data">
-          <h3>Nome: {user.name}</h3>
+          <h3>{user.name}</h3>
           <p>Local: {user.location}</p>
           <p>Biografia: {user.bio}</p>
           <p>Repositórios Públicos: {user.public_repos}</p>

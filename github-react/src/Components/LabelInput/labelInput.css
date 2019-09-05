@@ -10,6 +10,7 @@
 .input-text:focus, .input-text:active {
   outline: none;
   border: 2px solid #E72F85;
+  padding-left: 10px; 
 }
 .box-label {
   display: flex;

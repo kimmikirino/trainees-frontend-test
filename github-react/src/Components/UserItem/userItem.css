@@ -16,3 +16,8 @@ border: 5px solid #e91e63;
   font-size: 19px;
   width: 300px;
 }
+@media only screen and (max-width: 815px) {
+  .user-item-data{
+    text-align: center;
+  }
+}

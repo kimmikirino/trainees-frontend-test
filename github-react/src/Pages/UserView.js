@@ -14,7 +14,7 @@ const UserView = ({ match }) => {
   }, [match.params.id]);
 
   return (
-    <div>
+    <div className="user-view-box">
       <header>
         <Header/>
       </header>

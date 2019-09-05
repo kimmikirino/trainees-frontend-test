@@ -1,8 +1,6 @@
 .detail-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  justify-content: space-around;
   padding-top: 120px;
 }
 .detail-container p {
@@ -15,4 +13,11 @@
 }
 .user-img:hover {
   border: 5px solid #ec407a;
+}
+@media only screen and (max-width: 815px) {
+  .detail-container {
+    flex-direction: column;
+    padding-top: 170px;
+    text-align: center;
+  }
 }

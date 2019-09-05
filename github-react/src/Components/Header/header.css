@@ -1,5 +1,6 @@
 .fixed-menu-box {
   display: flex;
+  position: absolute;
   justify-content: space-between;
   width: 100%;
   height: 70px;
@@ -20,4 +21,20 @@
   height: 100%;
   width: auto;
   display: flex;
+}
+@media only screen and (max-width: 815px) {
+  .fixed-menu-box {
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+  .box-fixed-menu-btn {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .box-fixed-menu-btn a {
+    border-top: 1px solid #e1bee7;
+  }
 }

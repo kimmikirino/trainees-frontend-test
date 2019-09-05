@@ -6,7 +6,7 @@ import Button from '../Button/index.js'
 import { getUserByLogin } from '../../API/Users/index.js';
 
 const UserBody = () => {
-  const [user, setUser] = useState('hechprad');
+  const [user, setUser] = useState('kimmikirino');
   const [login, setLogin] = useState('');
   const [field, setField] = useState({login: ''});
   

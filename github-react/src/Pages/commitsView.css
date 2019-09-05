@@ -1,3 +1,7 @@
 .commit-box {
   padding-top: 100px;
+  padding-left: 30px;
+}
+.commit-box .box-label {
+  justify-content: center;
 }

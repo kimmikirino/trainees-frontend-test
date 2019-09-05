@@ -48,9 +48,9 @@ const CommitsView = ({ match, history } ) => {
           field.search === "" ?
           commits.map((commit, count) => 
             count < 10 ?
-              <p key={commit.sha}>{commit.commit.message}</p>:''
+              <a href={commit.html_url}><p key={commit.sha}>{commit.commit.message}</p></a>:''
           ) : search.map(commit => 
-            <p key={commit.sha}>{commit.commit.message}</p>
+            <a href={commit.html_url}><p key={commit.sha}>{commit.commit.message}</p></a>
           )
         }
       </div>

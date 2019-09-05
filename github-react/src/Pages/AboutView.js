@@ -18,7 +18,6 @@ const AboutView = () => {
       <header>
         <Header/>
       </header>
-      <h1>{user.name}</h1>
       <div className="about-container">
         <UserItem user={user} key={user.id} />
       </div>
