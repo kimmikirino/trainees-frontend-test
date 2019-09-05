@@ -45,7 +45,7 @@ const Commits = ({match}) => {
             </section>
                     {result.length !== 0 ?( 
                     <section> 
-                        <h1 id='titleResult'>Resultados encontrados: {result.length}</h1>
+                        <h1 id='titleResult'>Result found: {result.length}</h1>
                         <section className='resultFilter'>
                             <ResultFilter result = {result}/>
                         </section>
