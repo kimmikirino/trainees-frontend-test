@@ -5,7 +5,7 @@ import Button from '../Components/Button/index.js';
 import { getCommits } from '../API/Users/index.js';
 
 //recupera os dados da uri
-const CommitsView = ({ match }, history) => {
+const CommitsView = ({ match, history } ) => {
   const user = match.params.usuario;
   const userId = match.params.id;
   const rep = match.params.repositorio;
@@ -17,9 +17,10 @@ const CommitsView = ({ match }, history) => {
     })
   }, [user, rep]);
 
-  console.log(history)
+  console.log({history})
+
   const handleClick = () => {
-    history.push(`/${user}/${userId}/${rep}/commits`);
+    history.push(`/${user}/${userId}`)
   }
 
   return (
@@ -29,11 +30,11 @@ const CommitsView = ({ match }, history) => {
       </header>
       <div>
         {
-          commits.map(commit => {
-            return(
+          commits.map((commit, count) => 
+            count < 10 ?
               <p key={commit.sha}>{commit.commit.message}</p>
-            );
-          })
+            : ''
+          )
         }
       </div>
       <Button type="button" onClick={handleClick}>VOLTAR</Button>

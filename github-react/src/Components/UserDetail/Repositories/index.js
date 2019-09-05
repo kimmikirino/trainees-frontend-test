@@ -7,12 +7,9 @@ const Repositories = ({ user }) => {
   const [repositories, setRepositories] = useState([]);
 
   useEffect(() => {
-
     getRepositoriesByUrl(user.repos_url).then(({ data }) => {
       setRepositories(data);
     });
-
-    // 
   },[user]);
 
   return (

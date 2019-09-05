@@ -1,7 +1,7 @@
 import React from 'react';
 import './main.css';
 import Header from '../Components/Header/index.js';
-import GalleryContainer from '../Components/GalleryContainer/index.js';
+import UserBody from '../Components/UserBody/index.js';
 
 const Main = () => {
 
@@ -10,7 +10,7 @@ const Main = () => {
     <header>
       <Header/>
     </header>
-    <GalleryContainer />
+    <UserBody />
     </>
   );
 };
