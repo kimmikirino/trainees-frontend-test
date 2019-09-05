@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { getUserByUsername } from '../../API/User';
 import searchIcon from '../../assets/imgs/search-icon.png';
 
+import '../UserItem/userItem.css';
+
 const SearchUser = (props) => {
 
   const [inputUsernameValue, setUsernameValue] = useState(null);

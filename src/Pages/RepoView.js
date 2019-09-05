@@ -23,7 +23,7 @@ const RepoView = ({ match: { params }}) => {
       </header>
       <section>
         <div>
-          <Title title={`Last 10 commits: ${params.nameRepo}`} />
+          <Title title={`Commits: ${params.nameRepo} repository`} />
           {repo.map(repoItem => <RepoCommits repoItem={repoItem} key={repoItem.sha} />)}
         </div>
         <div><span>{repo.author}</span></div>   
