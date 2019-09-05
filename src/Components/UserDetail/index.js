@@ -9,7 +9,7 @@ const UserDetail = ({ user }) => {
     return user ? (
         <div className="container">
             <img className='user-img' src={user.avatar_url} alt={user.name}></img>
-            <div className="item">                 
+            <div className="item-user">                 
                 <h3>{user.name}</h3>                             
                 <p><b>Compania: </b>{user.company}</p>
                 <p><b>Localização: </b>{user.location}</p>
@@ -22,8 +22,7 @@ const UserDetail = ({ user }) => {
                 <p><b>Email: </b>{(user.email === null ? 'Não informado' : user.email)}</p>
                 <div>
                     <Link to={`/${user.login}/repos`}>
-                        <button onClick={() => <UserRepos userR={user} key={user.id}/>} 
-                        >
+                        <button onClick={() => <UserRepos userR={user} key={user.id}/>}>
                             Ver Repositorios
                         </button>
                     </Link>

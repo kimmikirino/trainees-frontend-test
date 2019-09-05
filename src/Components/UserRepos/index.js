@@ -3,7 +3,7 @@ import './userRepos.css';
 
 const UserRepos = ({ userR }) => {
     return userR ? (
-            <div className="item">
+            <div className="item-repos">
                 <div>
                     <h2>{userR.name}</h2>
                     <p><b>Projeto: </b>{userR.full_name}</p>
@@ -15,7 +15,7 @@ const UserRepos = ({ userR }) => {
                     <p><b>Atualizado em: </b>{userR.updated_at}</p>
                 </div>
             </div>
-    ) : <div>Nenhum repositorio encontrado</div>
+    ) : <div className="container">Nenhum repositorio encontrado</div>
 }
 
 export default UserRepos
