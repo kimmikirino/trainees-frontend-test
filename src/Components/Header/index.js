@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import './header.css'
 
@@ -7,7 +7,7 @@ const Header = ({ className }) => {
   return(
     <div >
       <div >
-        <h3>teste</h3>
+        <h3>Api GitHub</h3>
       </div>
     </div>
   )

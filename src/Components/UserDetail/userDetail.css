@@ -1,0 +1,14 @@
+.gallery-container {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 1360px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.user-img {
+    width: 215px;
+    height: 215px;
+}

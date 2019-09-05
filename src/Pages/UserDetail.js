@@ -16,11 +16,9 @@ const UserDetail = ( login ) => {
 
     return (
         <>      
-            
-            <div>
-                {   
-                    <UserDet user={user} />               
-                }
+            <Header />
+            <div> 
+                { <UserDet user={user} /> }
             </div>
         </>
     );

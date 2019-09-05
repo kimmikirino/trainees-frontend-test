@@ -3,25 +3,24 @@ import UserRep from '../Components/UserRepos';
 import Header from "../Components/Header"
 import { getUserRepos } from '../API/Data';
 
-//let login = 'LucasMSnts' //test
 const UserRepos = ( login ) => {
+    //let login = 'LucasMSnts' //test
     const [repos, setRepos] = useState([]);
-    console.log(login)
+    console.log(repos)
     useEffect(() => {
-        getUserRepos(login.login).then(({ data }) => {
+        getUserRepos(login.match.params.login).then(({ data }) => {
             setRepos(data)
         }).catch((error) => {
             console.log(error)
         })
-    }, [login.login]);  
+    }, [login.match.params.login]);  
 
     
     return (
         <>
+            <Header />
             <div>
-                {
-                    repos.map(repo => <UserRep userR={repo} key={repo.id} />)
-                }
+                { repos.map(repo => <UserRep userR={repo} key={repo.id} />) }
             </div>
         </>
     );

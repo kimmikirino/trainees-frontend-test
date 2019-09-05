@@ -1,0 +1,29 @@
+.menu-content {
+    padding: 15px;
+    justify-content: center;
+    position: absolute;
+}
+
+.menu-content button {
+    background-color: #575656;
+    border: 0px;
+    border-radius: 20px;
+    width: auto;
+    height: 37px;
+    color: black;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;    
+    margin-top: 10px;
+}
+  
+.menu-content button:hover {
+    background-color: #7c7b7c;
+}
+  
+.menu-content button:focus {
+    outline: none;
+}

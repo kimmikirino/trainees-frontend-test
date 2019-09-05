@@ -1,14 +1,14 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import './userDetail.css';
-import UserRepos from '../UserRepos';
+import UserRepos from '../../Pages/UserRepos';
 //import isNull from '../isNull';
 
 const UserDetail = ({ user }) => {
 
     return user ? (
-        <div>
-            <img src={user.avatar_url} alt={user.name}></img>
+        <div className="gallery-container">
+            <img className='user-img' src={user.avatar_url} alt={user.name}></img>
             <div>                 
                 <h3>{user.name}</h3>                             
                 <p><b>Compania: </b>{user.company}</p>

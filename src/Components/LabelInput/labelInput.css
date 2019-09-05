@@ -1,0 +1,20 @@
+.box-label {
+    width: 50%;    
+    padding-top: 25px;
+    flex-direction: column;
+  }
+  
+  .input-text {
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #1b1b1b;
+    border-radius: 10px;
+    height: 20px;
+    padding: 5px 5px;
+    margin-top: 10px;
+  }
+  
+  .input-text:focus, .input-text:active {
+    outline: none;
+    border: 2px solid #2a2a2a;
+  }
