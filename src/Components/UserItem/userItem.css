@@ -1,0 +1,35 @@
+.user-item {
+  /*user info on the right side of the picture*/
+  display: flex; 
+  justify-content: center;
+  margin-left: 5%;
+}
+
+.user-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  border: 3px double black;
+}
+
+.user-item p {
+  margin: 5px 10px;
+  font-size: 16px;  
+  color: rgb(42, 0, 109);
+}
+
+.user-item p b {
+  color: rgb(1, 29, 155);
+}
+
+@media only screen and (max-width: 543px) {
+  .user-item img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .user-item p {
+    margin: 2px 8px;
+    font-size: 14px;
+  }
+}

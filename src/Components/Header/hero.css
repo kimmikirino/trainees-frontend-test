@@ -1,0 +1,27 @@
+.header {
+  height: 80px;
+  width: 100%;
+  background-image: url("../../assets/imgs/background-hero.jpg");
+  background-size: 400px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 75px;
+}
+
+.header h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 543px) {
+  .header {
+    height: 55px;
+    padding-top: 60px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+}

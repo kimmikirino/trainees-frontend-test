@@ -1,3 +1,29 @@
+## Instructions to run the project:
+
+#### Result:
+ http://trainees-frontend-github.surge.sh/
+
+#### Requirements:
+  * nodejs
+  * npm
+
+#### Development environment:
+  * Clone this repository
+  * Access trainees-frontend-test folder:
+  ```
+      cd trainees-frontend-test
+  ```
+  * Install dependencies:
+  ```
+      npm install or yarn install
+  ```
+  * Run the project:
+  ```
+      npm start or yarn start
+  ```
+
+--------------------------------
+
 # Front end code challenge
 
 Hello :D

@@ -1,0 +1,7 @@
+.body-container {
+  width: 100%;
+}
+
+.body-container > div {
+  margin: 10px;
+}
