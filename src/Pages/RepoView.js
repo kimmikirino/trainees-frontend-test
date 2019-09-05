@@ -9,6 +9,7 @@ const RepoView = ({ match: { params }}) => {
 
   const [repo, setRepo] = useState(null);
 
+  // call API passing username and repo name to search commits related to this repo
   useEffect(() => {
     getUserRepoCommits(params.username, params.nameRepo).then(({ data }) => {
       setRepo(data);
@@ -26,7 +27,6 @@ const RepoView = ({ match: { params }}) => {
           <Title title={`Commits: ${params.nameRepo} repository`} />
           {repo.map(repoItem => <RepoCommits repoItem={repoItem} key={repoItem.sha} />)}
         </div>
-        <div><span>{repo.author}</span></div>   
       </section>
     </>
   )

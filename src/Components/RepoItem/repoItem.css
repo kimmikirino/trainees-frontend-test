@@ -9,11 +9,21 @@
 
 .repo-item-container p {
   margin: 5px 25px;
-  font-size: 14px;
+  font-size: 16px;
   color: rgb(42, 0, 109);
-  /* color: rgb(132, 0, 255); */
 }
 
 .repo-item-container p b {
   color: rgb(0, 31, 167);
+}
+
+.repo-item-container img {
+  width: 18px;
+}
+
+@media only screen and (max-width: 543px) {
+  .repo-item-container p {
+    margin: 3px 15px;
+    font-size: 15px;
+  }
 }

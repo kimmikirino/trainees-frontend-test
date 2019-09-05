@@ -9,6 +9,7 @@ import './repo.css'
 const Repo = ({ user }) => {
   const [repos, setRepo] = useState([]);
 
+  // call API passing repository URL
   useEffect(() => {
     user && (
       getUserReposByURL(user.repos_url).then((data) => {
@@ -17,14 +18,15 @@ const Repo = ({ user }) => {
     )
   }, [user]);
 
-  return user ? (
+  // list repositories
+  return user && (
     <>
       <Title title="Repositories" />
       <div className="repo-container">
         {repos.map(repoItem => <RepoItem repo={repoItem} key={repoItem.id} />)}
       </div>
     </>
-  ) : <span>Repos not found</span>
+  )
 }
 
 export default Repo;

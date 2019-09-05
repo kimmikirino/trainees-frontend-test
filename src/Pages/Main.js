@@ -29,7 +29,7 @@ const Main = () => {
       </header>
       <section className="body-container">
         <div>
-          <SearchUser user={user} setUser={setUser} />
+          <SearchUser setUser={setUser} />
           <UserItem user={user} />      
           <Repo user={user} />
         </div>
