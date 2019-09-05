@@ -55,4 +55,18 @@
   .box-fixed-menu-btn a {
     border-top: 1px solid #e1bee7;
   }
+  .logo-box a {
+    flex-direction: column;
+    /* width: 250px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .github-icon {
+    position: static;
+    padding-left: 0px;
+  }
+  .menu-title {
+    margin-left: 0px;
+  }
 }
