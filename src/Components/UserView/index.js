@@ -23,6 +23,4 @@ const UserView = ({ user }) => {
     )
 };
 
-
-
 export default UserView

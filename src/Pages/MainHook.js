@@ -11,7 +11,7 @@ const MainHook = ({ match }) => {
     const [UserRepos, setUserRepos] = useState([]);
     const [Username, setUsername] = useState(
         match.params.userLogin ? match.params.userLogin : "andretanaka"
-    );
+);
     const [login, setLogin] = useState("");
 
     //console.log(match.params.userLogin)
@@ -29,10 +29,10 @@ const MainHook = ({ match }) => {
         axios.get("https://api.github.com/users/" + Username + "/repos")
             .then(response => {
                 setUserRepos(response.data);
-                //console.log((response.data));
+                console.log((UserRepos));
             });
     }, [Username]);
-
+    //console.log((UserRepos));
      const handleChange = e => setLogin(e.target.value);
      //const handleClick = () => setUsername(login);
     const handleClick = () => (window.location.href = "/users/" + login);
