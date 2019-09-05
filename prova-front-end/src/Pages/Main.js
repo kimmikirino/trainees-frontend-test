@@ -31,7 +31,6 @@ const Main = () => {
                 <RepoButton profile ={profile}/>
                 <Footer/>
             </section>
-                
         </>
     )
 }

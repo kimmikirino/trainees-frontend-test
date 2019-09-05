@@ -1,3 +1,37 @@
 .content{
     background-color:rgb(37, 34, 37);
 }
+
+.showRepo{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(131, 121, 131);
+    height:750px;
+}
+
+.showRepo section.Repo{
+    flex-direction:column;
+}
+
+.showRepo section.Repo a{
+    color:rgb(153, 42, 42);
+    font-weight: 900;
+    font-size:23px;
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.showRepo section.Repo .repTitle{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:30px;
+    text-align: center;
+}
+
+.footerRelative{
+    height:123px;
+    width:100%;
+    bottom:0px;
+    position:relative;
+    background-color:black;
+}

@@ -1,10 +1,10 @@
 import React, {useState,useEffect} from 'react'
 import {getMyProfile,getMyRepo} from '../API/GitHub/index'
-import ProfileInfo from '../Components/ProfileInfo'
 import RepoList from '../Components/RepoList/index'
 import Header from '../Components/Header'
 import Hero from '../Components/Header/hero'
 import {Link} from 'react-router-dom'
+import '../App.css'
 
 const Repos = () => {
     const [user,setUser] = useState([])
@@ -34,9 +34,11 @@ const Repos = () => {
         <>
         <header>
             <Header/>
-            <Hero/>
         </header>
-            <ProfileInfo profile = {user}/>
+        <section className= 'showRepo'>
+            <img src= {user.avatar_url} alt= 'Imagem perfil'/>
+            <section className ='Repo'>
+                <h1 className='repTitle'>Repositories</h1>
                 {
                 repos.map(
                     repo =>
@@ -46,6 +48,9 @@ const Repos = () => {
                     </section> 
                     )
                 }
+            </section>
+        </section>
+        <section className = 'footerRelative'/>
         </>
     )
 }
