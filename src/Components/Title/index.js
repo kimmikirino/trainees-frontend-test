@@ -5,7 +5,7 @@ import './title.css';
 const Title = ({ title }) => {
   return (
     <div>
-      <h6 className="title-container">{title}:</h6>
+      <h6 className="title-container">{title}</h6>
     </div>
   )
 }

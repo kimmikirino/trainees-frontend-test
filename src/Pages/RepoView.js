@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../Components/Header';
 import Hero from '../Components/Header/Hero';
+import RepoCommits from '../Components/RepoCommits';
+import Title from '../Components/Title';
 import { getUserRepoCommits } from '../API/User';
 
 const RepoView = ({ match: { params }}) => {
@@ -10,7 +12,6 @@ const RepoView = ({ match: { params }}) => {
   useEffect(() => {
     getUserRepoCommits(params.username, params.nameRepo).then(({ data }) => {
       setRepo(data);
-      console.log(data);
     })
   }, [params]);
 
@@ -22,7 +23,8 @@ const RepoView = ({ match: { params }}) => {
       </header>
       <section>
         <div>
-          {repo.map(repoItem => <p key={repoItem.sha}>{repoItem.sha}</p>)}
+          <Title title={`Last 10 commits: ${params.nameRepo}`} />
+          {repo.map(repoItem => <RepoCommits repoItem={repoItem} key={repoItem.sha} />)}
         </div>
         <div><span>{repo.author}</span></div>   
       </section>
