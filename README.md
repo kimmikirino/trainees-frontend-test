@@ -15,11 +15,11 @@
   ```
   * Install dependencies:
   ```
-      npm install
+      npm install or yarn install
   ```
   * Run the project:
   ```
-      npm start
+      npm start or yarn start
   ```
 
 --------------------------------
