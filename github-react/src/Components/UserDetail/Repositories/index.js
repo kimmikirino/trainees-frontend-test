@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getRepositoriesByUrl } from '../../../API/Users/index.js';
 import Button from '../../Button/index.js';
-import './repositories.css'
+import './repositories.css';
 
 const Repositories = ({ user }) => {
   const [repositories, setRepositories] = useState([]);

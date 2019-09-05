@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 import Header from '../Components/Header/index.js';
 import Button from '../Components/Button/index.js';
-import LabelInput from '../Components/LabelInput/index.js'
+import LabelInput from '../Components/LabelInput/index.js';
 import './commitsView.css';
 import { getCommits } from '../API/Users/index.js';
 

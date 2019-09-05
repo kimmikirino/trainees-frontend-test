@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './userBody.css'
+import './userBody.css';
 import UserItem from '../UserItem/index.js';
-import LabelInput from '../LabelInput/index.js'
-import Button from '../Button/index.js'
+import LabelInput from '../LabelInput/index.js';
+import Button from '../Button/index.js';
 import { getUserByLogin } from '../../API/Users/index.js';
 
 const UserBody = () => {

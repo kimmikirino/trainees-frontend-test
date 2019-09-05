@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import Header from '../Components/Header/index.js';
 import UserDetail from '../Components/UserDetail/index.js';
 import { getUserById } from '../API/Users/index.js';
