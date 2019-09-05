@@ -30,7 +30,7 @@ const UserBody = () => {
     setField({[event.target.name]: value});
   };
   
-  const handleClick = () => setUser(login);
+  const handleClick = () => login.length > 0 ? setUser(login):alert("CAMPO VAZIO");;
   
   return (
     <div className="user-body-container">

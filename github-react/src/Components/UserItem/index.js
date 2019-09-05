@@ -11,7 +11,7 @@ const UserItem = ({ user }) => {
           <p>Local: {user.location}</p>
           <p>Biografia: {user.bio}</p>
           <p>Repositórios Públicos: {user.public_repos}</p>
-          <p>E-mail: hecherat@gmail.com{user.email}</p>
+          <p>E-mail: {user.email}</p>
           <a href={user.html_url}><p>Perfil no Github</p></a>
         </div>
       </div>

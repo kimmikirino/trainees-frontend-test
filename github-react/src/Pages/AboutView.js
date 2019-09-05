@@ -16,7 +16,6 @@ const AboutView = () => {
     })
   },[]);
 
-  console.log(commits)
   return (
     <>
       <header>

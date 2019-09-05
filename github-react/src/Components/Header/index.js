@@ -11,6 +11,7 @@ const Header = () => {
         <p className="menu-title">Trainees Front-end</p>
         <div className="box-fixed-menu-btn">
           <Link to={"/"}><Button>home</Button></Link>
+          <Link to={"/equipe"}><Button>equipe</Button></Link>
           <Link to={"/sobre"}><Button>sobre</Button></Link>
         </div>
       </div>
