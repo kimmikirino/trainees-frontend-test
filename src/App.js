@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Main from './Pages/Main';
+import RepoView from './Pages/RepoView';
+
 import './App.css';
 
 function App() {
@@ -8,24 +10,9 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={Main} />
+        <Route path="/repo/:username/:nameRepo" component={RepoView} />
       </Switch>
     </Router>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 

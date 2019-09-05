@@ -5,3 +5,33 @@
 .body-container > div {
   margin: 10px;
 }
+
+.search-user {
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 10px;
+  /* border: 1px solid black; */
+}
+
+.search-user button {
+  cursor: pointer;
+  width: 40px;
+}
+
+.search-user button img {
+  width: 20px;
+}
+
+.search-user input {
+  width: 150px;
+  padding-left: 3px;
+}
+
+.search-user input, button {
+  border-radius: 5px;
+}
+
+.search-user input, button:focus {
+  outline-color: gray;
+}

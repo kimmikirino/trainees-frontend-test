@@ -1,6 +1,6 @@
 .header {
   height: 80px;
-  /* background-color: black; */
+  width: 100%;
   background-image: url("../../assets/imgs/background-hero.jpg");
   background-size: 400px;
   color: white;
