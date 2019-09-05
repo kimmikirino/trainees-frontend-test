@@ -2,6 +2,8 @@
 
 I do apologize for some mixing in portuguese + english sentences , it is too much for me to think :S .
 
+If you want to check it out, it is hosted in http://crazytest.surge.sh/
+
 # Instructions to run the project
 
 First, you have to fork this repository : https://github.com/kimmikirino/trainees-frontend-test into your github account, using git clone + URL.
