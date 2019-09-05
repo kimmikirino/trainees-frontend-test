@@ -8,7 +8,6 @@ const ResultFilter = ({result}) => (
             <h1>{message.commit.message}</h1>
             <h6>{message.commit.author.name}</h6>
             {message.commit.verification.verified ? <h6 >Verified</h6> : <h6>Not verified</h6>}
-            //////////////
         </section>
         )}        
     </section>

@@ -3,7 +3,10 @@ import {getMyProfile} from '../API/GitHub/index'
 import ProfileInfo from '../Components/ProfileInfo'
 import Header from '../Components/Header'
 import Hero from '../Components/Header/hero'
-import {Link} from 'react-router-dom'
+import RepoButton from '../Components/RepoButton'
+import '../App.css'
+import Footer from '../Components/Footer'
+
 const Main = () => {
     const [profile,setProfile] = useState([])
 
@@ -19,12 +22,16 @@ const Main = () => {
 
     return(
         <>
-        <header>
-            <Header/>
-            <Hero/>
-        </header>
-        <ProfileInfo profile = {profile} />  
-        <Link to ='/repos' profile = {profile}><button >Number of Repos:{profile.public_repos}</button></Link>
+            <header>
+                <Header/>
+                <Hero/>
+            </header>
+            <section className = 'content'>
+                <ProfileInfo profile = {profile} />  
+                <RepoButton profile ={profile}/>
+                <Footer/>
+            </section>
+                
         </>
     )
 }

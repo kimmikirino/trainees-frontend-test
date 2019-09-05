@@ -1,12 +1,25 @@
 .header{
-    background-color:#24292e;
+    background-color:#393c3f;
     height: 70px;
     width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: flex-start;
+    position: relative;
+    display:flex;
+    justify-content: space-between;
     align-items: center;
 }
-.header > svg{
-    color:#fff;
+.header a{
+    margin-left:30px;
+}
+
+.searchBar{
+    margin-right:30px;
+}
+
+.searchBar button{
+    background-color:transparent;
+    border:0px;
+}
+
+.searchBar button:hover{
+    cursor:pointer;
 }
