@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { withRouter } from 'react-router-dom';
 import Header from '../Components/Header/index.js';
 import Button from '../Components/Button/index.js';
+import LabelInput from '../Components/LabelInput/index.js'
+import './commitsView.css';
 import { getCommits } from '../API/Users/index.js';
 
 //recupera os dados da uri
@@ -10,6 +12,8 @@ const CommitsView = ({ match, history } ) => {
   const userId = match.params.id;
   const rep = match.params.repositorio;
   const [commits, setCommits] = useState([]);
+  const [field, setField] = useState({search: ''});
+  const [search, setSearch] = useState({});
 
   useEffect(() => {
     getCommits(user, rep).then(({data}) => {
@@ -17,23 +21,35 @@ const CommitsView = ({ match, history } ) => {
     })
   }, [user, rep]);
 
-  console.log({history})
-
   const handleClick = () => {
     history.push(`/${user}/${userId}`)
   }
 
+  const handleChangeSearch = event => {
+    const value = event.target.value;
+    setField({[event.target.name]: value});
+    let commitsClone = commits;
+    
+    let searchResult = commitsClone.filter(commit => {
+      if(commit.commit.message.includes(value)) return commit;  //includes verifica se o valor existe na string
+    })
+    setSearch(searchResult);
+  };
+  
   return (
     <div>
       <header>
         <Header/>
       </header>
-      <div>
+      <div className="commit-box">
+      <LabelInput type="text" label="Pesquisar: " name="search" value={field.search} onChange={handleChangeSearch}/>
         {
+          field.search === "" ?
           commits.map((commit, count) => 
             count < 10 ?
-              <p key={commit.sha}>{commit.commit.message}</p>
-            : ''
+              <p key={commit.sha}>{commit.commit.message}</p>:''
+          ) : search.map(commit => 
+            <p key={commit.sha}>{commit.commit.message}</p>
           )
         }
       </div>

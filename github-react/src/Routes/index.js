@@ -11,6 +11,7 @@ const Routes = () => {
         <Route path="/" exact component={Main} />
         <Route path="/:usuario/:id" exact component={UserView} />
         <Route path="/:usuario/:id/:repositorio/commits" exact component={CommitsView} />
+        {/* <Rout path="/sobre" component={AboutView} /> */}
       </Switch>
     </Router>
   );
