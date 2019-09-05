@@ -11,7 +11,7 @@ const UserInfo = ({match,history}) => {
     
     useEffect(() =>{
         getUserByLogin(match.params.login)
-        .then(({data}) =>{
+        .then(async({data}) =>{
             setProfile(data)
         })
         .catch((error) =>{

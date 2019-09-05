@@ -12,7 +12,7 @@ const Main = () => {
 
     useEffect(() =>{
         getMyProfile()
-        .then( ({data}) =>{
+        .then( async ({data}) =>{
             setProfile(data)
         })
         .catch((error) =>{

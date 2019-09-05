@@ -12,7 +12,7 @@ const Repos = () => {
 
     useEffect(() =>{
         getMyProfile()
-        .then(({data}) =>{
+        .then(async ({data}) =>{
             setUser(data)
         })
         .catch((error) =>{
@@ -22,7 +22,7 @@ const Repos = () => {
     
     useEffect(() =>{
         getMyRepo()
-        .then( ({data}) =>{
+        .then( async ({data}) =>{
             setRepo(data)
         })
         .catch((error) =>{

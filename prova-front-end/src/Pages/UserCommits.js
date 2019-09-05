@@ -14,7 +14,7 @@ const Commits = ({match}) => {
     
     useEffect(() =>{
         getUserCommitsByID(match.params.login,match.params.id)
-        .then(({data}) =>{
+        .then(async ({data}) =>{
             setCommits(data)
         })
         .catch((error) =>{

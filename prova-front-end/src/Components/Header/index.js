@@ -4,7 +4,7 @@ import Input from '../Input'
 import IconSearch from '../../assets/imgs/icon-search.png'
 import './header.css'
 
-const Header = ({ className }) => {
+const Header = () => {
 const [userSearch,setUserSearch] = useState('')
 const handleChange = event => setUserSearch(event.target.value);
 

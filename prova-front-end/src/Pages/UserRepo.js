@@ -11,7 +11,7 @@ const UserRepo = ({match}) => {
 
     useEffect(() =>{
         getUserByLogin(match.params.login)
-        .then( ({data}) =>{
+        .then( async({data}) =>{
             setUser(data)
         })
         .catch((error) =>{
@@ -21,7 +21,7 @@ const UserRepo = ({match}) => {
     
     useEffect(() =>{
         getReposByLogin(match.params.login)
-        .then( ({data}) =>{
+        .then( async ({data}) =>{
             setRepo(data)
         })
         .catch((error) =>{

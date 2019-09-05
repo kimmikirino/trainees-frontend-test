@@ -12,6 +12,9 @@
 }
 
 .searchBar{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
     margin-right:30px;
 }
 
@@ -20,6 +23,29 @@
     border:0px;
 }
 
-.searchBar button:hover{
+.searchBar button:hover {
     cursor:pointer;
+}
+
+@media only screen and (max-width: 543px) {
+    .searchBar{
+        height:30px;
+        width:90%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .header{
+        justify-content: flex-start;
+    }
+    .searchBar{
+        margin-right:30px;
+        width:70%;
+    }
+
+    input{
+        line-height:5px;
+        padding:3px 3px;
+        width:45%;
+    }
 }

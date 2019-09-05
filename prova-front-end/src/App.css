@@ -10,11 +10,11 @@
     flex-wrap:15px;
 }
 
-.showRepo section.Repo{
+.Repo{
     flex-direction:column;
 }
 
-.showRepo section.Repo a{
+.Repo a{
     color:rgb(153, 42, 42);
     font-weight: 900;
     font-size:23px;
@@ -22,11 +22,11 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-.showRepo section.Repo section h1{
+.Repo section h1{
     color:rgb(153, 42, 42);
 }
 
-.showRepo section.Repo .repTitle{
+.Repo .repTitle{
     font-family: 'Courier New', Courier, monospace;
     font-size:30px;
     text-align: center;
@@ -37,6 +37,7 @@
     display:flex;
     justify-content: flex-start;
     align-items: center;
+    padding:20px;
 }
 
 .commitFilter > button{
@@ -49,10 +50,16 @@
     margin-left:5px; 
 }
 
+.commitFilter  button:hover{
+    cursor:pointer;
+    background-color:rgb(134, 132, 132);
+    color:white;
+}
+
 .resultFilter{
     display:flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content:stretch;
+    align-items: stretch;
     flex-direction: row;
     border: 3px solid black;
 }
@@ -79,9 +86,9 @@
 
 .listCommit{
     display:flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction:column;
+    margin-right:20px;
+    padding:50px;
 }
 
 .listCommit section{
@@ -94,6 +101,7 @@
     border-radius: 5px;
     padding:10px;
     margin-bottom:10px;
+    background-color:rgb(131, 118, 173);
 }
 
 .contentCommit{
@@ -120,3 +128,51 @@
     background-color:rgb(131, 118, 173);
     color:white;
 }
+
+@media only screen and (max-width: 815px) {
+    .showRepo{
+       flex-direction:column;
+    }
+
+    .showRepo > img{
+        margin-top : 20px; 
+    }
+}
+
+
+@media only screen and (max-width: 543px) {
+    .showRepo > img{
+        width:150px;
+        height:150px;
+        margin-left:20px;
+    }
+
+    .Repo > section{
+        font-size:15px;
+    }
+
+    .Repo > section h1{
+        font-size:15px;
+    }
+
+    #titleResult{
+        justify-content: center;
+        align-items: center;
+        font-size:20px;
+    }
+    
+    #titleCommit{
+        font-size:30px;
+    }
+
+    .listCommit section{
+        justify-content: center;
+        align-items: center;
+        font-size:20px;
+    }
+
+    .commitFilter{
+        padding:15px;
+    }
+    
+  }
