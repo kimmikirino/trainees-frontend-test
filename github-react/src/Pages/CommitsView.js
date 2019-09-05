@@ -31,8 +31,9 @@ const CommitsView = ({ match, history } ) => {
     let commitsClone = commits;
     
     let searchResult = commitsClone.filter(commit => {
-      if(commit.commit.message.includes(value)) return commit;  //includes verifica se o valor existe na string
-    })
+      if(commit.commit.message.toUpperCase().includes(value.toUpperCase())) return commit 
+      else return "";  //includes verifica se o valor existe na string
+    }) 
     setSearch(searchResult);
   };
   

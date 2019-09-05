@@ -10,6 +10,7 @@ const Header = () => {
       <div className="fixed-menu-box">
         <div>
           <Link to={"/"}><Button>home</Button></Link>
+          <Link to={"/sobre"}><Button>sobre</Button></Link>
         </div>
       </div>
     </>
