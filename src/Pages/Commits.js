@@ -38,7 +38,7 @@ const Commits = ({ match }) => {
 
     const dateFormat = (dateBefore) => (
          dateBefore.substr(8,2) + "/" +
-            dateBefore.substr(5,2) + "/" + dateBefore.substr(1,3)
+            dateBefore.substr(5,2) + "/" + dateBefore.substr(0,4)
     );
 
     const timeFormat = (timeBefore) => (

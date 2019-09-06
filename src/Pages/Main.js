@@ -36,8 +36,12 @@ const Main = ({ match }) => {
             })
     }, [username]);
 
-    const handleChange = e => setLogin(e.target.value);
-    const handleClick = () => (window.location.href = "/users/" + login);
+    const handleChange = e => {
+        setLogin(e.target.value);
+    };
+    const handleClick = () => {
+        setUsername(login);
+    };
 
     return (
         userInfo ? (
