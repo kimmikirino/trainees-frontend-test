@@ -1,0 +1,21 @@
+.repo-info{
+    width: 400px;
+}
+
+.repo2 {
+    text-align:center;
+}
+@media only screen and (max-width: 815px) {
+    .users-details {
+      flex-direction:column;
+    }
+  }
+
+@media only screen and (max-width: 543px) {
+    .users-details  {
+      width:150px;
+      height:150px;
+      margin-left:20px;
+    }
+
+  }

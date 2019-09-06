@@ -1,0 +1,29 @@
+    
+  @media only screen and (min-width: 1360px) {
+    .adjust-photo {
+      width: 1360px;
+    }
+  }
+    
+  @media only screen and (max-width: 1359px) {
+    .adjust-photo {
+      width: 816px;
+    }
+  }
+    
+  @media only screen and (max-width: 815px) {
+    .adjust-photo{
+      width: 544px;
+    }
+  }
+  
+  @media only screen and (max-width: 543px) {
+    .adjust-photo{
+      width: 272px;
+    }
+  }
+  
+
+  .adjust-photo{
+    float: center;
+  }

@@ -1,0 +1,28 @@
+.body{
+    background-color: #000;
+}
+.menu {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(8, 5, 15, 0.7);
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu div {
+    margin: 10px;
+}
+.logo-content {
+    border-right: 1px solid white;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+@media only screen and (max-width: 430px) {
+    .header {
+      justify-content: flex-start;
+      margin: 70px;
+    }
+}
