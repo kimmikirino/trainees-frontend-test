@@ -11,7 +11,6 @@ const Commits = ({match}) => {
     const [filtro,setFiltro] = useState('')
     const[result,setResult] = useState([])
     
-    
     useEffect(() =>{
         getUserCommitsByID(match.params.login,match.params.id)
         .then(async ({data}) =>{
@@ -22,11 +21,12 @@ const Commits = ({match}) => {
         })
     },[match.params.login,match.params.id])
 
-
     const handleFiltro = (event) => setFiltro(event.target.value)
 
     function checkCommit(commit,string,string2){
-        return string === string2 ? commit : ""
+        let stringlwr = string.toLowerCase();
+        let string2lwr = string2.toLowerCase();
+        return stringlwr.includes(string2lwr) ? commit : ""
     }
 
     const handleSearch = (commits,filtro) => {
