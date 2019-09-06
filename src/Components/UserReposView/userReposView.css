@@ -1,0 +1,82 @@
+.list-repos {
+    width: 650px;
+    margin: 10px;
+    background-color: #D6EDFF;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.list-title {
+    padding-left: 20px;
+}
+
+.list-item {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.list-item a:visited, a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+.list-item a {
+    font-weight: bold;
+    color: blue;
+}
+
+
+
+@media only screen and (min-width: 1330px ){
+    .user-info {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1329px ){
+    .user-info {
+        width: 600px;
+    }
+
+}
+
+@media only screen and (max-width: 815px ){
+    .user-info {
+        width: 600px;
+        justify-content: center;
+    }
+
+    .user-details {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 543px ){
+    .user-info {
+        justify-content: center;
+    }
+
+    .user-details {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .list-title h3 {
+        font-size: 16px;
+    }
+
+    .list-item a  {
+        font-size: 14px;
+    }
+
+    .list-item li {
+        font-size: 14px;
+    }
+}
