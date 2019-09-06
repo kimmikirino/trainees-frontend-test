@@ -1,6 +1,6 @@
 ## Instructions to run the project
 
-- First you have to install Node JS (https://nodejs.org/en/download/) to be able to simulate the site running
+- First you have to install Node JS (https://nodejs.org/en/download/) to be able to simulate the website running
 
 - When installed, go to CMD or Terminal and type "npm install" or "yarn install" 
 
