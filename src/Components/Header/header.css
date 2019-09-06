@@ -19,18 +19,8 @@
 
 .fixed-menu button {
     background-color: #171717;
-    border: 0px;
-    border-radius: 20px;
-    width: auto;
-    height: 37px;
+    border-radius: 5px;    
     color: white;
-    font-size: 16px;
-    font-weight: 200;
-    padding: 0px 10px;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;    
-    margin-top: 10px;
 }
 
 .fixed-menu button:hover {

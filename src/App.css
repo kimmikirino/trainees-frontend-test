@@ -16,7 +16,7 @@ a {
 button {
     background-color: #575656;
     border: 0px;
-    border-radius: 20px;
+    border-radius: 5px;
     width: auto;
     height: 37px;
     color: black;
@@ -25,6 +25,7 @@ button {
     padding: 0px 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor: pointer;    
     margin: 10px;
 }

@@ -3,18 +3,6 @@
     justify-content: center;
 }
 
-.menu-content button {
-    justify-content: center;
-}
-
-.menu-content button:hover {
-    background-color: #979797;
-}
-
-.menu-content button:focus {
-    outline: none;
-}
-
 .center {
     justify-content: center;
 }
@@ -34,6 +22,13 @@
     display: flex;
 }
 
+.container-search button:hover {
+    background-color: #979797;
+}
+
+.container-search button:focus {
+    outline: none;
+}
 
     
   @media only screen and (max-width: 467px) {
