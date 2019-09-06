@@ -17,18 +17,15 @@ const handleChange = event => setUsername(event.target.value);
                 <Header />
                 <Hero />
             </header>
-            <div className="container-search">
-                <div>                    
+            <div className="container-search">                
                     <LabelInput label="Insira o login que deseja" 
                         type="text" 
                         placeholder="Usuario"          
                         onChange={handleChange}
-                        className="input-text"
                     />
                     <div>
                         <Link to={`/${username}`}> <button onClick={() => <UserDetail user={username} />}>Buscar</button></Link>
-                    </div>                
-                </div> 
+                    </div> 
             </div>
         </>
     );

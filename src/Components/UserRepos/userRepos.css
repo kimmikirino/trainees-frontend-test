@@ -1,24 +1,123 @@
 .item-repos {
     width: 400px;
-    height: 410px;
+    height: 300px;
     margin: 10px;
     background-color: #7a7a7a;
     border: 1px solid black;
     border-radius: 5px;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     position: relative;
 }
 
 .item-repos p{
-    align-items: flex-start;
-    margin-left: 15px;
+    margin: 7px;  
 }
 
 .item-repos h2{
-    align-items: center;
     margin-left: 25px;
+}
+
+@media only screen and (max-width: 1069px) {
+    .item-repos {
+        width: 320px;
+        margin: 5px;
+    }
+
+    .item-repos h2{
+        margin-left: 15px;
+    }
+
+    .item-repos h2{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 849px) {
+    .item-repos {
+        width: 300px;
+    }
+
+    .item-repos p{
+        margin: 4px;  
+    }    
+}
+
+@media only screen and (max-width: 780px) { 
+    .item-repos {
+        width: 400px;
+        margin: 10px;
+    } 
+
+    .item-repos p{
+        margin: 7px;  
+    }  
+    
+    .item-repos h2{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 543px) { 
+    .item-repos {
+        width: 300px;
+    } 
+
+    .item-repos p{
+        margin: 7px;  
+    }  
+    
+    .item-repos h2{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 413px) { 
+    .item-repos {
+        width: 250px;
+    } 
+
+    .item-repos p{
+        margin: 4px;  
+        font-size: 15px;
+    }     
+    
+    .item-repos h2{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 356px) { 
+    .item-repos {
+        width: 220px;
+        height: 310px;
+    } 
+
+    .item-repos p{
+        margin: 4px;  
+        font-size: 14px;
+    }     
+    
+    .item-repos h2{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 319px) { 
+    .item-repos {
+        width: 200px;
+        height: 310px;
+    } 
+
+    .item-repos p{
+        margin: 4px;  
+        font-size: 14px;
+    }     
+    
+    .item-repos h2{
+        font-size: 15px;
+    }
 }
 
