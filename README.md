@@ -2,7 +2,7 @@
 ***
 This is a ReactJS app that consumes [Github API](https://developer.github.com/v3/])
 
-See here the application: [ReactJSChallenge](automatic-boot.surge.sh)
+See here the application: [ReactJSChallenge](http://automatic-boot.surge.sh/)
 ***
 ### 📌Requirements
 
