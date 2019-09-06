@@ -1,0 +1,48 @@
+.user{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.user > img{
+    width:350px;
+    height:350px;
+    margin-left:50px;
+}
+
+.user > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right:50px;
+    color:white;
+    font-size:20px;
+    margin-left:50px;
+}
+
+.user > section h1{
+    color:white;
+}
+
+@media only screen and (max-width: 815px) {
+    .user {
+      flex-direction:column;
+    }
+  }
+
+@media only screen and (max-width: 543px) {
+    .user > img {
+      width:150px;
+      height:150px;
+      margin-left:20px;
+    }
+
+    .user > section{
+        font-size:15px;
+    }
+
+    .user > section h1{
+        font-size:15px;
+    }
+    
+  }

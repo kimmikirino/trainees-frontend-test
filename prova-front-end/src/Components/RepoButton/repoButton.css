@@ -1,0 +1,19 @@
+.RepoLink{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:30px;
+}
+
+.RepoLink button{
+    font-size: 15px;
+    margin-bottom:30px;
+    border-radius:3px;
+    border: 2px;
+    height: 30px;
+}
+
+.RepoLink button:hover{
+    background-color:rgb(131, 118, 173);
+    color:white;
+}

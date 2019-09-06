@@ -1,0 +1,178 @@
+.content{
+    background-color:rgb(37, 34, 37);
+}
+
+.showRepo{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(131, 121, 131);
+    flex-wrap:15px;
+}
+
+.Repo{
+    flex-direction:column;
+}
+
+.Repo a{
+    color:rgb(153, 42, 42);
+    font-weight: 900;
+    font-size:23px;
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.Repo section h1{
+    color:rgb(153, 42, 42);
+}
+
+.Repo .repTitle{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:30px;
+    text-align: center;
+    color: rgb(153, 42, 42);
+}
+
+.commitFilter{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:20px;
+}
+
+.commitFilter > button{
+    border-radius:10px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border: 2px;
+    height: 34px;
+    margin-top: 5px;
+    margin-left:5px; 
+}
+
+.commitFilter  button:hover{
+    cursor:pointer;
+    background-color:rgb(134, 132, 132);
+    color:white;
+}
+
+.resultFilter{
+    display:flex;
+    justify-content:stretch;
+    align-items: stretch;
+    flex-direction: row;
+    border: 3px solid black;
+}
+
+#titleResult{
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(109, 47, 109);
+    font-size:25px;
+}
+
+#noResult{
+    margin-left:10px;
+    font-size:15px;
+}
+
+#titleCommit{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:rgb(109, 47, 109);
+    font-size:40px;
+}
+
+.listCommit{
+    display:flex;
+    flex-direction:column;
+    margin-right:20px;
+    padding:50px;
+}
+
+.listCommit section{
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction:column; 
+    margin-left:20px;
+    border:4px outset white;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom:10px;
+    background-color:rgb(131, 118, 173);
+}
+
+.contentCommit{
+    background-color:rgb(153, 149, 149);
+    position:relative;
+}
+
+.repoLinkUser{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:30px;
+}
+
+.repoLinkUser button{
+    font-size: 15px;
+    margin-bottom:30px;
+    border-radius:3px;
+    border: 2px;
+    height: 30px;
+}
+
+.repoLinkUser button:hover{
+    background-color:rgb(131, 118, 173);
+    color:white;
+}
+
+@media only screen and (max-width: 815px) {
+    .showRepo{
+       flex-direction:column;
+    }
+
+    .showRepo > img{
+        margin-top : 20px; 
+    }
+}
+
+
+@media only screen and (max-width: 543px) {
+    .showRepo > img{
+        width:150px;
+        height:150px;
+        margin-left:20px;
+    }
+
+    .Repo > section{
+        font-size:15px;
+    }
+
+    .Repo > section h1{
+        font-size:15px;
+    }
+
+    #titleResult{
+        justify-content: center;
+        align-items: center;
+        font-size:20px;
+    }
+    
+    #titleCommit{
+        font-size:30px;
+    }
+
+    .listCommit section{
+        justify-content: center;
+        align-items: center;
+        font-size:20px;
+    }
+
+    .commitFilter{
+        padding:15px;
+    }
+    
+  }
