@@ -9,6 +9,7 @@
     justify-content: flex-start;
     position: relative;
     padding: 20px;
+
 }
 
 .user-image {
@@ -28,4 +29,37 @@
 
 .user-details {
     margin: 0px 20px;
+}
+
+@media only screen and (min-width: 1330px ){
+    .user-info {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1329px ){
+    .user-info {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 815px ){
+    .user-info {
+        justify-content: center;
+    }
+
+    .user-details {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 543px ){
+    .user-info {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .user-details {
+        font-size: 14px;
+        margin-top: 10px;
+    }
 }

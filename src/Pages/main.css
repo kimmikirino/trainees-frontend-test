@@ -1,0 +1,36 @@
+.body-main {
+    margin: 0px auto;
+    /* auto = centraliza o container*/
+    width: 1330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+
+@media only screen and (min-width: 1330px ){
+    .body-main {
+        width: 1330px;
+    }
+}
+
+@media only screen and (max-width: 1329px ){
+    .body-main {
+        width: 816px;
+    }
+}
+
+@media only screen and (max-width: 815px ){
+    .body-main {
+        width: 563px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 543px ){
+    .body-main {
+        width: 302px;
+        padding-top: 100px;
+    }
+}

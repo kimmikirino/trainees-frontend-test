@@ -1,5 +1,5 @@
 import React from 'react'
-import Field from "../Field"
+import Field from "../Fields/Box"
 import "./userView.css"
 
 const UserView = ({ user }) => {
@@ -11,12 +11,14 @@ const UserView = ({ user }) => {
                     <img src={user.avatar_url} alt={user.name} />
                 </div>
                 <div className="user-details">
-                    <h3>Informacoes do usuario</h3>
-                    <Field label="Usuario:" info={user.login} />
+                    <h3>Informações do usuário</h3>
+                    <Field label="Usuário:" info={user.login} />
                     <Field label="Empresa:" info={user.company} />
-                    <Field label="Localizacao:" info={user.location} />
+                    <Field label="Localização:" info={user.location} />
                     <Field label="Email" info={user.email} />
                     <Field label="Sobre:" info={user.bio} />
+                    <Field label="Seguindo:" info={user.following} />
+                    <Field label="Seguidores:" info={user.followers} />
                 </div>
             </div>
         </>

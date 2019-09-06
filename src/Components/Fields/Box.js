@@ -1,15 +1,13 @@
 import React from 'react'
-import "./field.css"
-
+import "./box.css"
 
 const Field = ({ label, info }) => (
-    <div className="user-detail">
+    <div className="data-box">
         <label><strong>{label}</strong></label>
-        <div className="user-data">
-            {info ? info : "Informacao nao informada."}
+        <div className="data-info">
+            {info ? info : "Sem informação."}
         </div>
     </div>
 );
-
 
 export default Field

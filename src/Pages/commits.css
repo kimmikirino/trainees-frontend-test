@@ -1,0 +1,59 @@
+.body-main {
+    margin: 0px auto;
+    /* auto = centraliza o container*/
+    width: 1330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+
+.commit-box {
+    width: 600px;
+    margin: 10px;
+    background-color: #D6EDFF;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.commit-item a {
+    color: black ;
+}
+
+.commit-item a:visited, a:link {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (min-width: 1330px ){
+    .body-main {
+        width: 1330px;
+    }
+}
+
+@media only screen and (max-width: 1329px ){
+    .body-main {
+        width: 816px;
+    }
+}
+
+@media only screen and (max-width: 815px ){
+    .body-main {
+        width: 563px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 543px ){
+    .body-main {
+        width: 302px;
+        padding-top: 100px;
+    }
+}
