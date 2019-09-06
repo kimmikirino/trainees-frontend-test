@@ -1,0 +1,32 @@
+div .div-p-rep-box {
+  display: flex;
+  justify-content: space-between;
+  border-left: 1px solid #46148C;
+  border-bottom-left-radius: 10px;
+  align-items: center;
+  margin-right: 30px;
+}
+.rep-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rep-button {
+  background-color: #46148C;
+  border-radius: 5px;
+  height: 40px;;
+}
+@media only screen and (max-width: 815px) {
+  .rep-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .rep-button {
+    background-color: #46148C;
+    border-radius: 5px;
+    height: 40px;;
+  }
+}

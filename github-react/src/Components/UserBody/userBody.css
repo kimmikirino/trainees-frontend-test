@@ -1,0 +1,38 @@
+.user-body-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  padding-top: 70px;
+}
+.login-user-box > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  margin: 0px;
+}
+.btn-body {
+  background-color: #46148C;
+  border-radius: 10px;
+}
+.box-button .btn {
+  height: 100%;
+}
+@media only screen and (max-width: 815px) {
+  .user-body-container {
+    padding-top: 170px;
+    flex-direction: column;
+  }
+  .box-user {
+    flex-direction: column;
+    align-items: center;
+  }
+  .login-user-box div {
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+}

@@ -1,0 +1,23 @@
+.detail-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 120px;
+}
+.detail-container p {
+  margin: 0px;
+}
+.user-img {
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid #4a148c;
+}
+.user-img:hover {
+  border: 5px solid #ec407a;
+}
+@media only screen and (max-width: 815px) {
+  .detail-container {
+    flex-direction: column;
+    padding-top: 170px;
+    text-align: center;
+  }
+}
