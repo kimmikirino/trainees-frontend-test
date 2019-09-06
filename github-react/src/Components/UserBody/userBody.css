@@ -23,7 +23,7 @@
 }
 @media only screen and (max-width: 815px) {
   .user-body-container {
-    padding-top: 120px;
+    padding-top: 170px;
     flex-direction: column;
   }
   .box-user {
