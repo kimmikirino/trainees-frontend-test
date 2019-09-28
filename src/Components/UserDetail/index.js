@@ -1,8 +1,6 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import './userDetail.css';
-import UserRepos from '../../Pages/UserRepos';
-//import isNull from '../isNull';
 
 const UserDetail = ({ user }) => {
 
@@ -19,10 +17,10 @@ const UserDetail = ({ user }) => {
                 <p><b>Conta Criada: </b>{user.created_at}</p>
                 <p><b>Seguidores: </b>{user.followers}</p>
                 <p><b>Seguindo: </b>{user.following}</p>
-                <p><b>Email: </b>{(user.email === null ? 'Não informado' : user.email)}</p>
+                <p><b>Email: </b>{user.email}</p>
                 <div>
                     <Link to={`/${user.login}/repos`}>
-                        <button onClick={() => <UserRepos userR={user} key={user.id}/>}>
+                        <button>
                             Ver Repositorios
                         </button>
                     </Link>
