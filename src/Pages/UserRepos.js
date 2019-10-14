@@ -6,10 +6,9 @@ import { getUserRepos } from '../API/Data';
 
 const UserRepos = ( {match} ) => {
     const [repos, setRepos] = useState([]);
-    console.log(repos)
     useEffect(() => {
         getUserRepos(match.params.login).then(({ data }) => {
-            setRepos(data)
+        setRepos(data)
         }).catch((error) => {
             console.log(error)
         })
