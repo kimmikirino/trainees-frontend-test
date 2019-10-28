@@ -39,7 +39,7 @@ export default class RepoCommits extends Component {
                     <Header />                
                     <Hero />
                 </header>
-                <div> 
+                <div className="container"> 
                     { 
                         commitsRepo.map(commit => <RepCommits repo={commit} key={commit.node_id}/>)
                     }   

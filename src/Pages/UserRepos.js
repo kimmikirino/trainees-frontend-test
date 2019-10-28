@@ -18,7 +18,7 @@ const UserRepos = ( {match} ) => {
     return (
         <>
             <header>
-                <Header login={match.params.login}/>
+                <Header back={match.params.login}/>
                 <Hero />
             </header>
             <div className="container">

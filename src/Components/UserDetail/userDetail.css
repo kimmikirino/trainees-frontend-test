@@ -7,7 +7,7 @@
 
 .item-user {
     width: 775px;
-    height: 400px;
+    min-height: 400px;
     margin: 10px;
     background-color: #b4b2b2;
     border: 1px solid black;

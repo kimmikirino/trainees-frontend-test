@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import './header.css'
 
-const Header = ({ login }) => {
+const Header = ({ back }) => {
 
   return(
     <div className="fixed-menu">
@@ -10,10 +10,10 @@ const Header = ({ login }) => {
         <Link to={`/`}><h3>Api GitHub</h3></Link>
       </div>
       <div>
-       {(login !== undefined) ? 
+       {(back !== undefined) ? 
         <div>
-          <Link to={`/${login}`}>
-            <button>Retornar para {login}</button>
+          <Link to={`/${back}`}>
+            <button>Retornar para {back}</button>
           </Link>
         </div>
          : ''}

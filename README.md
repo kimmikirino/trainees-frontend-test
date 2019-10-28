@@ -85,13 +85,6 @@ Shows details about kimmikirino user.
 
 You can write us any time (whatsapp, email, or you can even call us)
 
-## IMPORTANT
-
-- Please, Do NOT copy the code from any of your trainee friends
-- Please, Do not ask for help to experienced friends or boy/girl friends
-- Code by yourself, we appreciate it
-- Submit your PR until September 5th (23:59)
-
 ## Good luck and Happy Coding!
 
 <img src="https://user-images.githubusercontent.com/5693916/30273942-84252588-96fb-11e7-9420-5516b92cb1f7.gif" data-canonical-src="https://user-images.githubusercontent.com/5693916/30273942-84252588-96fb-11e7-9420-5516b92cb1f7.gif" width="150" height="150" />
