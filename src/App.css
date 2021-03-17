@@ -1,0 +1,31 @@
+a {
+  text-decoration: none;
+}
+
+.container {
+    margin: 10px auto;
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: #575656;
+    border: 0px;
+    border-radius: 5px;
+    width: auto;
+    height: 37px;
+    color: black;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;    
+    margin: 10px;
+}

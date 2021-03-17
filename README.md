@@ -1,3 +1,22 @@
+## Instructions to run the project
+
+- First you have to install Node JS (https://nodejs.org/en/download/) to be able to simulate the website running
+
+- When installed, go to CMD or Terminal and type "npm install" or "yarn install" 
+
+- In the same place, install "npm install -g create-react-app" or "yarn install -g create-react-app" to be able to run node js
+
+- That done, type "create-react-app project-name"
+
+- Enter folder created "cd project-name"
+
+- Inside the folder, install axios, "npm install --save axios" or "yarn install --save axios"
+
+- After installing also install react-router-dom "npm install --save react-router-dom" or "yarn install --save react-router-dom"
+
+- When all are installed, run "npm start" or "yarn start"
+
+
 # Front end code challenge
 
 Hello :D
@@ -66,13 +85,9 @@ Shows details about kimmikirino user.
 
 You can write us any time (whatsapp, email, or you can even call us)
 
-## IMPORTANT
-
-- Please, Do NOT copy the code from any of your trainee friends
-- Please, Do not ask for help to experienced friends or boy/girl friends
-- Code by yourself, we appreciate it
-- Submit your PR until September 5th (23:59)
-
 ## Good luck and Happy Coding!
 
 <img src="https://user-images.githubusercontent.com/5693916/30273942-84252588-96fb-11e7-9420-5516b92cb1f7.gif" data-canonical-src="https://user-images.githubusercontent.com/5693916/30273942-84252588-96fb-11e7-9420-5516b92cb1f7.gif" width="150" height="150" />
+
+
+

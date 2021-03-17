@@ -1,0 +1,39 @@
+.menu-content {
+    padding: 15px;    
+    justify-content: center;
+}
+
+.center {
+    justify-content: center;
+}
+
+.container-search {
+    margin: 10px auto;
+    width: 450px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-search button {
+    display: flex;
+}
+
+.container-search button:hover {
+    background-color: #979797;
+}
+
+.container-search button:focus {
+    outline: none;
+}
+
+    
+  @media only screen and (max-width: 467px) {
+    .container-search {
+      width: 250px;
+    }
+  }
+    

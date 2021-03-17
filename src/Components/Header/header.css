@@ -1,0 +1,32 @@
+.fixed-menu {
+    height: 70px;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 1);
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.fixed-menu div {
+    margin: 10px;
+}
+
+.fixed-menu div h3{
+    color: white;
+}
+
+.fixed-menu button {
+    background-color: #171717;
+    border-radius: 5px;    
+    color: white;
+}
+
+.fixed-menu button:hover {
+    background-color: #979797;
+}
+  
+.fixed-menu button:focus {
+    outline: none;
+}
